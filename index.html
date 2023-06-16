@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calories Tracker</title>
+</head>
+<body>
+    <h1>Calorie Tracker</h1>
+    <div class="container">
+      <div class="header">
+        <img
+          src="cal.jpg"
+          alt="calimg"
+        />
+        <div class="cal-container">
+          <h2>Total Calories</h2>
+          <h2 id="Calories" class="Calories">00</h2>
+        </div>
+      </div>
+        <div>
+        </div>
+      </div>
+      <h3>Add Meal / Food Item</h3>
+      <form id="form">
+          <div class="form-control">
+              <label for="text">Add Item</label>
+              <input type="text" id="text" placeholder="Add Item..." />
+            </div>
+            <div class="form-control">
+                <label for="cal"
+                >Calories
+                <input type="number" min="0" id="cal" placeholder="Enter Calories..." />
+            </div>
+            
+            <button class="btn">Add Meal</button>
+        </form>
+        <h3>History</h3>
+        <ul id="list" class="list"></ul>
+    </div>
+    <div class="notification-container" id="notification">
+      <p>Please add a Meal Item and calories</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
